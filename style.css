@@ -1,0 +1,104 @@
+main {
+    display: block;
+    unicode-bidi: isolate;
+    color:white;
+}
+h2 {
+    color: aliceblue;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0 var(--spacing-3);
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+html, body {
+    height: 100%;
+    color: var(--font-color);
+}
+
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+#logo {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Space between logo and navigation list */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Background color for the nav bar */
+    padding: 10px; /* Padding around the items */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+#logo {
+    color: white; 
+    font-size: 24px; 
+}
+
+/* Styling for the list to ensure horizontal layout */
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Make the list horizontal */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styling for each list item */
+.navigation li {
+    margin: 0 15px; /* Space between items */
+}
+
+/* Styling for links within the navigation */
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hover effect for links */
+.navigation a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+section {
+    color: white;
+}
+
+/* Ensure the container is a flex container */
+.about-me-text-container {
+    display: flex; /* Enable flexbox layout */
+    align-items: flex-start; /* Align items to the start of the container */
+    gap: 20px; /* Add space between the text and the image */
+}
+
+/* Style for the text box */
+.about-me-text-box {
+    flex: 1; /* Allow the text box to take up available space */
+}
+
+/* Style for the portrait image */
+.portrait {
+    width: 250px; /* Set width for the image */
+    height: auto; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+footer {
+    display: block;
+    unicode-bidi: isolate;
+}
